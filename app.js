@@ -67,14 +67,4 @@ app.get('/people', async (req, res) => {
   }
 });
 
-mongoose.connect(
-  'mongodb+srv://ashutoshhnegi:htbKXI23MJ0fDY2h@ashutoshdb.edbwk.mongodb.net/www',
-  { useNewUrlParser: true },
-  (err) => {
-    if (err) {
-      console.log(err);
-    } else {
-      app.listen(3000);
-    }
-  }
-);
+app.listen(3000,()=>console.log('on prot 3000'));
